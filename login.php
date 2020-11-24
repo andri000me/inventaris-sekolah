@@ -69,7 +69,7 @@ if(isset($_POST['cek_login'])){
                         <!-- Nested Row within Card Body -->
                         <div class="row">
                             <div class="col-lg-5 d-none d-lg-block text-center">
-                                <!-- <img src="<?=$base_url;?>assets/img/logo_pln.png"> -->
+                                <img src="<?=$base_url;?>assets/img/login.png" width="420" height="400">
                             </div>
                             <div class="col-lg-7">
                                 <div class="p-5">

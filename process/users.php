@@ -64,6 +64,7 @@ if(decrypt($_GET['act'])=='ganti_pass' && isset($_POST['ubah_pass'])){
     $password =password_hash($_POST['password'],PASSWORD_DEFAULT);
 
     $update = mysqli_query($con,"UPDATE users SET password='$password' WHERE id_users='$id'") or die (mysqli_error($con));
+    $_SESSION['success'] = "Anda berhasil mengubah password";
     echo '<script>window.history.back();</script>';
 }
 
