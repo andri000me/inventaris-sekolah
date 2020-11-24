@@ -29,12 +29,13 @@
     <?php if($_SESSION['level']=='admin'):?>
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item <?=isset($master)?'active':'';?>">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-            aria-controls="collapseTwo">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#master" aria-expanded="true"
+            aria-controls="master">
             <i class="fas fa-fw fa-folder"></i>
             <span>Master</span>
         </a>
-        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="master" class="collapse <?=isset($master)?'show':'';?>" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item <?=isset($merek)?'active':'';?>" href="?merek">Merek</a>
                 <a class="collapse-item <?=isset($kategori)?'active':'';?>" href="?kategori">Kategori</a>
@@ -45,12 +46,13 @@
     </li>
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item <?=isset($transaksi)?'active':'';?>">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-            aria-controls="collapseTwo">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#transaksi" aria-expanded="true"
+            aria-controls="transaksi">
             <i class="fas fa-fw fa-folder"></i>
             <span>Transaksi</span>
         </a>
-        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="transaksi" class="collapse <?=isset($transaksi)?'show':'';?>" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item <?=isset($barang_masuk)?'active':'';?>" href="?barang_masuk">Barang Masuk</a>
                 <a class="collapse-item <?=isset($barang_keluar)?'active':'';?>" href="?barang_keluar">Barang Keluar</a>
@@ -59,12 +61,13 @@
     </li>
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item <?=isset($laporan)?'active':'';?>">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-            aria-controls="collapseTwo">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#laporan" aria-expanded="true"
+            aria-controls="laporan">
             <i class="fas fa-fw fa-folder"></i>
             <span>Laporan</span>
         </a>
-        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="laporan" class="collapse <?=isset($laporan)?'show':'';?>" aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item <?=isset($lap_barang_masuk)?'active':'';?>" href="?lap_barang_masuk">Laporan
                     Barang Masuk</a>
